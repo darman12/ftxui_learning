@@ -21,5 +21,4 @@ add_executable(ftxui_learning main.cpp)
 target_link_libraries(ftxui_learning
         PRIVATE ftxui::screen
         PRIVATE ftxui::dom
-        PRIVATE ftxui::component
-)
+        PRIVATE ftxui::component)
