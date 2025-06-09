@@ -16,8 +16,8 @@ FetchContent_Declare(ftxui
 
 FetchContent_MakeAvailable(ftxui)
 
-add_executable(main main.cpp)
-target_link_libraries(main
+add_executable(ftxui_learning main.cpp)
+target_link_libraries(ftxui_learning
         PRIVATE ftxui::screen
         PRIVATE ftxui::dom
         PRIVATE ftxui::component
