@@ -15,16 +15,11 @@ FetchContent_Declare(ftxui
 )
 
 FetchContent_MakeAvailable(ftxui)
+# -----------------------------------------------------------------------------
 
 add_executable(ftxui_learning main.cpp)
 target_link_libraries(ftxui_learning
         PRIVATE ftxui::screen
         PRIVATE ftxui::dom
         PRIVATE ftxui::component
-)
-# -----------------------------------------------------------------------------
-
-target_link_directories(ftxui_learning
-    PRIVATE ftxui::screen
-    PRIVATE ftxui::dom
 )
